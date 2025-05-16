@@ -1,6 +1,11 @@
+import { ApolloProvider } from '@apollo/client'
+import { Pet } from "./bus/pet";
+import client from './init/client';
+
 export const App = () => {
     return (
-        <>
-            <h1>App</h1></>
+        <ApolloProvider client={client}>
+            <Pet/>
+        </ApolloProvider>
     )
 }
