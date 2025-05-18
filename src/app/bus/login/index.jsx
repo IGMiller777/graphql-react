@@ -27,7 +27,7 @@ export const Login = () => {
             <input type="text" placeholder="Username" name="username" onChange={handleChange}/>
             <input type="text" placeholder="Password" name="password" onChange={handleChange}/>
 
-            <button type="submit" onClick={save}>Save</button>
+            <button type="submit" onClick={save}>LogIn</button>
         </>
     )
 }
