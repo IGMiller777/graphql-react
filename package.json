@@ -9,6 +9,8 @@
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^13.2.1",
     "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-http": "^1.5.17",
     "graphql": "^16.11.0",
     "graphql.macro": "^1.4.2",
     "react": "^19.1.0",
@@ -21,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fetch-schema": "get-graphql-schema https://funded-pet-library.moonhighway.com/ > schema.graphql"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "get-graphql-schema": "^2.1.2"
   }
 }
