@@ -1,0 +1,6 @@
+schema: "https://funded-pet-library.moonhighway.com/"
+documents: "./src/**/*.graphql"
+extensions:
+  endpoints:
+    default:
+      url: "https://funded-pet-library.moonhighway.com/"

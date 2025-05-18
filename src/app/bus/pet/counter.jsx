@@ -2,7 +2,7 @@ import React from "react";
 
 import { useQueryAvailablePets } from "./hooks/useQueryAvailablePets";
 
-export const Counter = () => {
+export const Counter = (x, y ) => {
     const {loading, error, data} = useQueryAvailablePets();
 
     if (loading) {

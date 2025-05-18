@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import {App} from './app/index'
+import { App } from './app/index'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Login } from "./app/bus/login";
+import { Pet } from "./app/bus/pet";
+import { Customer } from "./app/bus/customer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App/>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </React.StrictMode>
 );
 
